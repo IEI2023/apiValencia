@@ -1,7 +1,7 @@
 {
-  "name": "apicat",
+  "name": "apicv",
   "version": "1.0.0",
-  "description": "API para la obtencion o carga de datos de la comunidad de cataluña",
+  "description": "API para la obtencion o carga de datos de la comunidad valenciana",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
