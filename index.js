@@ -10,9 +10,10 @@ app.use(bodyParser.text());
 
 app.post("/jsonFromBody", (req, res) => {
   const filePath = "tempFile.csv";
-  fs.writeFileSync(filePath, req.body);
 
   try {
+    fs.writeFileSync(filePath, req.body);
+
     const dataJson = csvToJson.fieldDelimiter(";").getJsonFromCsv(filePath);
     fs.unlinkSync(filePath);
 
